@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro hosting</title>
+  <style>
+    body {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: inline-flex;
+    }
+
+    .container {
+      position: relative;
+      margin: 0 auto;
+    }
+
+    form {
+      margin: 0 auto;
+    }
+
+    a {
+      display: flex;
+      margin-top: 40px;
+      border: 1px solid gray;
+      border-radius: 15px;
+      color: black;
+      width: 30%;
+      padding: 2%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>Pro hosting</h2>
+    <h3>Upload'uj swój plik</h3>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <input type="submit" value="zatwierdź" name="submit">
+    </form>
+    <a href="/pliki">zobacz pliki</a>
+  </div>
+</body>
+
+</html>
